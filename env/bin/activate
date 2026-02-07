@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV=/home/elmax/Desktop/U_main/Praxs/PYTHON/Greatkart/env
+VIRTUAL_ENV=/home/elmax/Desktop/umain/myprojects/PYTHON/django/Greatkart/env
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

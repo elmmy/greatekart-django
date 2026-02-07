@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/elmax/Desktop/U_main/Praxs/PYTHON/Greatkart/env
+set -gx VIRTUAL_ENV /home/elmax/Desktop/umain/myprojects/PYTHON/django/Greatkart/env
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

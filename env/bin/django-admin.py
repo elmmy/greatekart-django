@@ -1,4 +1,4 @@
-#!/home/elmax/Desktop/U_main/Praxs/PYTHON/Greatkart/env/bin/python3
+#!/home/elmax/Desktop/umain/myprojects/PYTHON/django/Greatkart/env/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

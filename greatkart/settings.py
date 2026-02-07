@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'u)hy3xof(wli5g6an64)!l8chg*$(+n6#aft9v0lt*41be9l27'
+SECRET_KEY = '*12docw=hhkf3vq0-(2b9jb&x*j+i@2sf)mfel^jtuy=7x!9^7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'category',
     'accounts',
     'store',
-    'carts',
 ]
 
 MIDDLEWARE = [
@@ -66,14 +65,14 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'category.context_processors.menu_links',
-                'carts.context_processor.counter',
+                'category.context_processor.menu_links',
             ],
         },
     },
 ]
 
 WSGI_APPLICATION = 'greatkart.wsgi.application'
+
 AUTH_USER_MODEL='accounts.Account'
 
 # Database
@@ -124,27 +123,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT=BASE_DIR /'staticfiles' 
+#STATIC_ROOT= BASE_DIR /'static'
 STATICFILES_DIRS=[
-    BASE_DIR /'greatkart'/'static',
+    BASE_DIR /'static',
 ]
-#Media Files Configurations
-
+#MEDIA CONFIGURATIONS
 MEDIA_URL='/media/'
-MEDIA_ROOT=BASE_DIR /'media' 
-
-
-from django.contrib.messages import constants as messages
-
-MESSAGE_TAGS = {
-    messages.ERROR: "danger",
-}
-
-#SMTP CONFIGURATION
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
-EMAIL_HOST_USER = 'elmakuya@gmail.com'
-EMAIL_HOST_PASSWORD = 'warpotcfmgmqypfx'
+MEDIA_ROOT=BASE_DIR /'media'
